@@ -321,7 +321,7 @@ public class Gatos extends PApplet {
             // -------------------------------
             //        IMPLEMENTACION
             // -------------------------------
-            return false;
+            return tablero[0][2]==otro.tablero[0][0]&&tablero[1][2]==otro.tablero[0][1]&&tablero[2][2]==otro.tablero[0][2]&&tablero[0][1]==otro.tablero[1][0]&&tablero[1][1]==otro.tablero[1][1]&&tablero[2][1]==otro.tablero[1][2]&&tablero[0][0]==otro.tablero[2][0]&&tablero[1][0]==otro.tablero[2][1]&&tablero[2][0]==otro.tablero[2][2];
         }
 
         /**
@@ -344,7 +344,7 @@ public class Gatos extends PApplet {
             return false;
         }
 
-        /** Devuelve una representación con caracteres de este estado.
+        /** Devuelve una representación con caracteres de este estado. 
         *  Se puede usar como auxiliar al probar segmentos del código. 
         */
         @Override
