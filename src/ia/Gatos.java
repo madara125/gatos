@@ -247,7 +247,24 @@ public class Gatos extends PApplet {
             // Hint: se debe verificar si el estado sigue siendo valido, si lo es, generar a sus sucesores
             // usando una lista ligada. recuerden que deben especificar que jugador jugó. No vayan a  
             // dejar sin padre a los sucesores.
-            return null;
+	    LinkedList <Gato> next= new LinkedList<Gato>();
+	    if(!hayGanador){
+		for(int i=0; i<3; i++){
+		    for(int j=0; j<3; j++){
+			if(tablero[i][j]==0){
+			    Gato x1=this;
+			    x1.tiraEn(i,j);
+			    x1.jugador1=!x1.jugador1;
+			    if(!next.contains(x1)){
+				next.add(x1);
+			    }
+			}
+		    }
+		}
+	    } else {
+		return null;
+	    }
+	    return next;
         }
 
 
