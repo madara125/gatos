@@ -305,7 +305,7 @@ public class Gatos extends PApplet {
             // -------------------------------
             //        IMPLEMENTACION
             // -------------------------------
-            return false;
+            return tablero[2][0]==otro.tablero[0][0]&&tablero[1][0]==otro.tablero[0][1]&&tablero[0][0]==otro.tablero[0][2]&&tablero[2][1]==otro.tablero[1][0]&&tablero[1][1]==otro.tablero[1][1]&&tablero[0][1]==otro.tablero[1][2]&&tablero[2][2]==otro.tablero[2][0]&&tablero[1][2]==otro.tablero[2][1]&&tablero[0][2]==otro.tablero[2][2];
         }
 
         /** Rota el otro tablero 180° en la dirección de las manecillas del reloj. */
@@ -313,7 +313,7 @@ public class Gatos extends PApplet {
             // -------------------------------
             //        IMPLEMENTACION
             // -------------------------------
-            return false;
+            return tablero[2][2]==otro.tablero[0][0]&&tablero[2][1]==otro.tablero[0][1]&&tablero[2][0]==otro.tablero[0][2]&&tablero[1][2]==otro.tablero[1][0]&&tablero[1][1]==otro.tablero[1][1]&&tablero[1][0]==otro.tablero[1][2]&&tablero[0][2]==otro.tablero[2][0]&&tablero[0][1]==otro.tablero[2][1]&&tablero[0][0]==otro.tablero[2][2];
         }
 
         /** Rota el otro tablero 270° en la dirección de las manecillas del reloj. */
